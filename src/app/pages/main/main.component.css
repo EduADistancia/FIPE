@@ -1,0 +1,32 @@
+.container {
+    max-width: 1000px;
+    background-color: var(--blanco);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+/* PUNTOS DE CORTE */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: 15px auto;
+        padding: 30px;
+    }
+}

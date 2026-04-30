@@ -1,0 +1,138 @@
+.result {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    /* display: none; */
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.approved {
+    background-color: rgba(141, 226, 214, 0.2);
+    border: 2px solid var(--azul-claro);
+}
+
+.disapproved {
+    background-color: rgba(255, 204, 0, 0.15);
+    border: 2px solid var(--amarillo);
+}
+
+.result-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.result-title i {
+    font-size: 28px;
+}
+
+.final-score {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.badget {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.correct-answers {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.correct-answers h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--azul-oscuro);
+}
+
+.item-answer {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.item-answer:last-child {
+    border-bottom: none;
+}
+
+.correct {
+    display: inline-block;
+    background-color: var(--verde-aprobado);
+    color: var(--blanco);
+    padding: 5px 0;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.justification {
+    margin: 0.5rem 0 1.25rem;
+    padding-left: 20px;
+    color: #555;
+    font-style: italic;
+    font-size: 15px;
+}
+
+ul {
+    margin-left: 20px; 
+    margin-top: 10px;
+}
+
+.feedback {
+    margin: 1.5rem 0;
+}
+
+.feedbackText {
+    margin: 0.5rem 0;
+}
+
+ .cmdButton {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-check {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-check:hover {
+    background-color: #0f2533;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .btn-check {
+        width: 100%;
+        justify-content: center;
+    }
+}

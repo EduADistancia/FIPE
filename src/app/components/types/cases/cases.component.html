@@ -1,0 +1,61 @@
+@for (c of cases; track $index; let ci = $index) {
+  <div class="case">
+    @if (!monocase) {
+      <div class="case-header">
+        <div class="case-number">
+          <p>CASO {{ $index+1 }}</p>
+        </div>
+        <div class="case-score">
+          <p>{{ c.score }} puntos</p>
+        </div>
+      </div>
+    }
+  
+    <h3 class="case-title">{{ c.caseTitle }}</h3>
+  
+    <div class="situation">
+      <p><strong>Situación:</strong> {{ c.situation }}</p>
+    </div>
+  
+    @for (q of c.questions; track $index; let qi = $index) {
+      <div class="question">
+        @if (q.title) {
+          <div class="question-text">
+            <h4>{{ q.title }}</h4>
+          </div>
+        }
+        <div class="question-text">
+          <p>
+            {{ $index+1 }}. {{ q.question }}
+          </p>
+        </div>
+
+        <div class="options">
+          @for (o of q.options; track $index; let oi = $index) {
+            <div class="option">
+              <input type="radio" 
+                     [id]="'c'+ci+'q'+qi+'o'+oi"
+                     [name]="'c'+ci+'q'+qi" 
+                     [value]="o.answer">
+              <label class="option-text"
+                     [for]="'c'+ci+'q'+qi+'o'+oi">
+                {{ o.answer }}
+              </label>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+}
+
+<div class="hidden" #warning>
+  <p>Debés responder todas las preguntas</p>
+</div>
+
+<div class="cmdButton" #cmdButton>
+  <button class="btn-check"
+          (click)="checkAnswers()">
+    <i class="fas fa-paper-plane"></i> Finalizar Evaluación
+  </button>
+</div>

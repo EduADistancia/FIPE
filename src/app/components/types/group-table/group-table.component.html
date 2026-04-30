@@ -1,0 +1,41 @@
+<div id="scrollH">
+  <table id="bizcanvas">
+    <thead>
+      <tr>
+        <td class="headerTable" [colSpan]="labels.length">
+          <h3>Clasificar</h3>
+        </td>
+      </tr>
+      <tr>
+        @for (label of labels; track $index) {
+          <td class="headerTable">{{ label.label }}</td>
+        }
+      </tr>
+      <tr>
+        @for (label of labels; track $index) {
+         <td class="columnEmpty drop-area" [attr.id]="label.key"></td>
+        }
+      </tr>
+    </thead>
+  </table>
+</div>
+<div id="dropElements">
+  @for (item of items; track $index) {
+    <p class="word" draggable="true" [attr.name]="item.keyLabel">{{ item.content }}
+      <span class="result"></span>
+    </p>
+  }
+</div>
+
+<div class="hidden feedback" #result></div>
+
+<div class="hidden warning" #warning>
+  <p>Debés responder todas las preguntas</p>
+</div>
+
+<div class="cmdButton" #cmdButton>
+  <button class="btn-check"
+          (click)="checkResults()">
+    <i class="fas fa-paper-plane"></i> Comprobar
+  </button>
+</div>

@@ -1,0 +1,51 @@
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    position: absolute;
+    bottom: 0;
+    
+}
+
+div.footerContent {
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+
+/* PUNTOS DE CORTE */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    footer {
+        height: 110px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer * {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    footer {
+        align-items: center;
+        justify-content: center;
+    }
+}

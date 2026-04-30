@@ -1,0 +1,101 @@
+<div class="hidden" #result>
+
+  <!-- Aprobado -->
+  @if (approved){
+    <div class="result approved">
+      <h3 class="result-title"><i class="fas fa-check-circle"></i> Módulo Aprobado</h3>
+      <p class="final-score">Puntaje obtenido: <strong>{{finalScore}}/{{totalScore}} puntos</strong></p>
+      @if (feedback) {
+        @for (fOk of feedback.resultOk; track $index) {
+          <p class="feedbackText">{{ fOk }}</p>
+        }
+      }
+      @else {
+        <p class="feedbackText">¡Felicitaciones! Has demostrado comprensión de los conceptos clave del módulo.</p>
+      }
+
+      @if (badget) {
+        <div class="badget" [title]="badget.url ? 'Acceder' : 'Aún no disponible'">
+          <a [href]="badget.url" 
+             [title]="badget.url ? 'Acceder' : 'Aún no disponible'"
+             [className]="badget.url ? null : 'disabled'">
+            <i class="fas fa-award"></i> Insignia Digital - Habilidades Clave para Emprender
+          </a>
+        </div>
+      }
+      <p>Se habilita el acceso al siguiente Módulo del curso.</p>
+      
+      <div class="correct-answers">
+          <h4><i class="fas fa-list-check"></i> Respuestas correctas y justificación</h4>
+          <div class="item-answer">
+              @for (c of cases; track $index; let ci = $index) {
+                @if (!monocase) {
+                  <span class="correct">CASO {{ ci+1 }}</span> 
+                }
+                @for (q of c.questions; track $index; let qi = $index) {
+                  @for (o of q.options; track $index) {
+                    @if (o.isCorrect) {
+                      <p>{{ qi+1 }}. {{ q.question }}</p>
+                      <div class="justification">
+                        <p>{{ o.justification }}</p>
+                      </div>
+
+                    }
+                  }
+                }
+              }
+          </div>
+      </div>
+    </div>
+  }
+
+  <!-- Desaprobado -->
+  @else {
+    <div class="result disapproved">
+      <h3 class="result-title"><i class="fas fa-exclamation-circle"></i> Actividad No Aprobada</h3>
+      <p class="final-score">Puntaje obtenido: <strong>{{finalScore}}/{{totalScore}} puntos</strong></p>
+      <p>En esta oportunidad no alcanzaste el puntaje mínimo requerido ({{ passingScore }} puntos).</p>
+      @if (feedback) {
+        @for (fNotOk of feedback.resultNotOk; track $index) {
+          <p>{{ fNotOk }}</p>
+        }
+      }
+      @else {
+        <p><strong>Te recomendamos:</strong></p>
+        <ul>
+            <li>Repasar los contenidos del módulo</li>
+            <li>Analizar las respuestas correctas y sus justificaciones</li>
+            <li>Volver a intentarlo cuando te sientas preparado/a</li>
+        </ul>
+      }
+      
+      <div class="correct-answers">
+          <h4><i class="fas fa-lightbulb"></i> Respuestas correctas para tu aprendizaje</h4>
+          @for (c of cases; track $index; let ci = $index) {
+            <div class="feedback">
+              <p><strong>CASO {{ ci+1 }}</strong></p>
+              @for (q of c.questions; track $index; let qi = $index) {
+                @for (o of q.options; track $index; let oi = $index) {
+                  @if (o.isCorrect) {
+                    <p class="feedbackText">
+                      <strong>Pregunta {{ qi+1 }}.</strong> 
+                    {{ o.justification }}
+                    </p>
+                  }
+                }
+              }
+            </div>
+          }
+      </div>
+    </div>
+  }
+
+  @if (isIframe) {
+    <div class="cmdButton">
+      <button class="btn-check"
+              (click)="close()">
+        Cerrar
+      </button>
+    </div>
+  }
+</div>

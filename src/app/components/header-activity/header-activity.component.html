@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="course-title"> {{ headerContent.title.courseTitle }} </div>
+  <h1 class="evaluation-title"> {{ headerContent.title.evaluationTitle }} </h1>
+  <p class="subtitle"> {{ headerContent.title.subtitle }} </p>
+</div>
+
+<div class="info-card">
+  <h2><i class="fas fa-info-circle"></i> Instrucciones</h2>
+  @for (i of headerContent.instructions.instructionText; track $index) {
+    <p> {{ i }} </p>
+  }
+
+  @if (passingScore > 0) {
+    <p><strong>Para aprobar el módulo y obtener la insignia digital, necesitás alcanzar un puntaje mínimo de:</strong></p>
+    <div class="score">{{ passingScore }} puntos de {{ totalScore }}</div>
+  }
+</div>

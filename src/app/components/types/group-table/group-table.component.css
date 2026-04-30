@@ -1,0 +1,89 @@
+#scrollH {
+    width: fit-content;
+}
+
+#bizcanvas {
+    margin-top: 5%;
+    width: 100%;
+}
+
+#bizcanvas tr {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+#bizcanvas > tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropElements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.word {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    background-color: var(--light-grey);
+    color: var(--dark-blue);
+    cursor: pointer;
+    touch-action: none;
+    width: max-content;
+}
+
+.word.dragging {
+  position: fixed !important;
+  z-index: 1000 !important;
+  pointer-events: none;
+}
+
+.drop-area {
+  position: relative;
+}
+
+.headerTable {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    min-height: 180px;
+    width: 220px;
+}
+
+.headerTable > h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.columnEmpty {
+    vertical-align: top;
+    height: 80px;
+}
+
+.feedback {
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+/* PUNTOS DE CORTE */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    #scrollH {
+        width: auto;
+        overflow-x: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    #scrollH {
+        width: auto;
+        overflow-x: auto;
+    }
+}

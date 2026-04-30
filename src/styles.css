@@ -1,0 +1,31 @@
+@import url("styles/colors.css");
+@import url("styles/cases.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    white-space: pre-line;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: var(--blanco);
+    color: var(--gris-oscuro);
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+*:has(> .disabled) {
+    cursor: not-allowed;
+}

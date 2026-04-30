@@ -1,0 +1,40 @@
+<div class="container">
+    
+  <!-- Cabecera de la actividad -->
+  <app-header-activity [headerContent]="dataActivity.header"
+                        [passingScore]="passingScore"
+                        [totalScore]="totalScore"/>
+
+  <!-- Distribuidor según tipo -->
+  @switch (dataActivity.type) {
+    @case ('cases') {
+      <app-cases [cases]="dataActivity.cases"
+                  [monocase]="dataActivity.monocase"
+                  [passingScore]="passingScore"
+                  (approved)="getResult($event)"/>
+    }
+    @case ('true-false') {
+      <app-quiztf [questions]="dataActivity.questions"/>
+    }
+    @case ('multi-choice') {
+      <app-quizmo [questions]="dataActivity.questions"/>
+    }
+    @case ('group-table') {
+      <app-group-table [labels]="dataActivity.labels"
+                       [items]="dataActivity.items"
+                       [feedback]="dataActivity.feedback"/>
+    }
+  }
+
+  <!-- Resultado -->
+  <app-result #result
+              [cases]="dataActivity.cases"
+              [approved]="approved"
+              [passingScore]="passingScore"
+              [finalScore]="finalScore"
+              [totalScore]="totalScore"
+              [feedback]="dataActivity.feedback"
+              [badget]="dataActivity.badget"
+              [monocase]="dataActivity.monocase"/>
+
+</div>

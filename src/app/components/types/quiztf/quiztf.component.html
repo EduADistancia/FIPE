@@ -1,0 +1,50 @@
+@for (q of questions; track $index; let qi = $index) {
+  <div class="case">
+    @if (q.title) {
+      <div class="question-text">
+        <p>{{ q.title }}</p>
+      </div>
+    }
+    <div class="question">
+      <div class="questionText">
+        <p>{{ q.question }}</p>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="option">
+        <input type="radio" 
+               [name]="'q'+qi" 
+               [id]="'t'+qi"
+               [value]="true">
+        <label [for]="'t'+qi">Verdadero</label>
+      </div>
+      <div class="option">
+        <input type="radio" 
+               [name]="'q'+qi" 
+               [id]="'f'+qi"
+               [value]="false">
+        <label [for]="'f'+qi">Falso</label>
+      </div>
+    </div>
+
+    <div [id]="'justify-t-'+qi" class="hidden">
+      <p class="justify">{{ q.answer.justificationCorrect }}</p>
+    </div>
+    <div [id]="'justify-f-'+qi" class="hidden">
+      <p class="justify">{{ q.answer.justificationIncorrect }}</p>
+    </div>
+
+  </div>
+}
+
+<div class="hidden" #warning>
+  <p>Debés responder todas las preguntas</p>
+</div>
+
+<div class="cmdButton" #cmdButton>
+  <button class="btn-check"
+          (click)="checkAnswers()">
+    <i class="fas fa-paper-plane"></i> Comprobar
+  </button>
+</div>
