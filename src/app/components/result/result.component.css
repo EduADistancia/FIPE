@@ -43,8 +43,8 @@
 .badget {
     display: inline-flex;
     align-items: center;
-    background-color: var(--azul-oscuro);
-    color: var(--blanco);
+    background-color: var(--dark);
+    color: var(--white);
     padding: 10px 20px;
     border-radius: 50px;
     margin: 15px 0;
@@ -60,7 +60,7 @@
 .correct-answers h4 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: var(--azul-oscuro);
+    color: var(--dark);
 }
 
 .item-answer {

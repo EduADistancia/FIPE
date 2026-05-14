@@ -11,7 +11,7 @@
 body {
     font-family: 'Archivo', sans-serif;
     background-color: var(--white);
-    color: var(--dark-blue);
+    color: var(--dark);
     line-height: 1.6;
     position: relative;
     min-height: 100vh;

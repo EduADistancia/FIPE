@@ -35,7 +35,8 @@
 .case-title {
     font-size: 22px;
     font-weight: 700;
-    color: var(--dark-blue);
+    /* color: var(--dark-blue); */
+    color: var(--dark);
     margin-bottom: 15px;
 }
 
@@ -51,7 +52,8 @@
 }
 
 .situation strong {
-    color: var(--dark-blue);
+    /* color: var(--dark-blue); */
+    color: var(--dark);
 }
 
 /* Preguntas */
@@ -69,7 +71,8 @@
     font-weight: 600;
     margin-bottom: 15px;
     font-size: 17px;
-    color: var(--dark-blue);
+    /* color: var(--dark-blue); */
+    color: var(--dark);
 }
 
 .options {
