@@ -1,9 +1,12 @@
 .case {
-    background-color: var(--light-grey);
+    /* background-color: var(--light-grey); */
+    background-color: var(--white);
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 40px;
-    border-top: 4px solid var(--dark-blue);
+    /* border-top: 4px solid var(--dark-blue); */
+    border: 1px solid var(--dark-grey);
+    border-top: 4px solid var(--dark-grey);
 }
 
 .case-header {
@@ -20,7 +23,8 @@
 }
 
 .case-score {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-color: var(--light-grey);
     color: var(--white);
     padding: 6px 12px;
     border-radius: 6px;
@@ -36,7 +40,8 @@
 }
 
 .situation {
-    background-color: rgba(141, 226, 214, 0.2);
+    /* background-color: rgba(141, 226, 214, 0.2); */
+    background-color: var(--white);
     padding: 18px;
     border-radius: 8px;
     margin-bottom: 25px;
@@ -105,7 +110,8 @@
 }
 
 .btn-check {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-color: var(--dark-grey);
     color: var(--white);
     border: none;
     padding: 16px 40px;
@@ -120,7 +126,8 @@
 }
 
 .btn-check:hover {
-    background-color: #0f2533;
+    /* background-color: #0f2533; */
+    background-color: var(--light-grey);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -144,7 +151,8 @@
     justify-content: center;
     border-radius: 4px;
     background-color: var(--incorrect);
-    color: var(--light-grey);
+    /* color: var(--light-grey); */
+    color: var(--white);
 }
 
 @media (max-width: 768px) {

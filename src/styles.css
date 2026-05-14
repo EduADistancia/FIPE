@@ -10,8 +10,8 @@
 
 body {
     font-family: 'Archivo', sans-serif;
-    background-color: var(--blanco);
-    color: var(--gris-oscuro);
+    background-color: var(--white);
+    color: var(--dark-blue);
     line-height: 1.6;
     position: relative;
     min-height: 100vh;

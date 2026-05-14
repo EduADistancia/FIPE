@@ -3,7 +3,8 @@ footer {
     height: 60px;
     display: flex;
     color: var(--white);
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-color: var(--dark-grey);
     position: absolute;
     bottom: 0;
     

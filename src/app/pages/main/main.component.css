@@ -1,6 +1,6 @@
 .container {
     max-width: 1000px;
-    background-color: var(--blanco);
+    background-color: var(--white);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
 }

@@ -29,6 +29,7 @@
     margin: 1rem 2rem;
     background-color: var(--light-grey);
     color: var(--dark-blue);
+    color: var(--white);
     cursor: pointer;
     touch-action: none;
     width: max-content;

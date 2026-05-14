@@ -2,7 +2,8 @@
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 2px solid var(--light-blue);
+    /* border-bottom: 2px solid var(--light-blue); */
+    border-bottom: 2px solid var(--dark-grey);
 }
 
 .course-title {
@@ -29,11 +30,15 @@
 }
 
 .info-card {
-    background-color: var(--light-blue);
+    /* background-color: var(--light-blue); */
+    background-color: var(--white);
+    color: var(--dark-blue);
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 40px;
-    border-left: 5px solid var(--dark-blue);
+    /* border-left: 5px solid var(--dark-blue); */
+    border: 1px solid var(--red);
+    border-left: 5px solid var(--red);
 }
 
 .info-card h2 {
@@ -45,11 +50,13 @@
 
 .info-card p {
     margin-bottom: 12px;
+    color: var(--dark-blue);
 }
 
 .score {
     display: inline-block;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-color: var(--light-grey);
     color: var(--white);
     padding: 8px 16px;
     border-radius: 6px;

@@ -2,9 +2,19 @@
     --dark-blue: #153244;
     --light-blue: #8DE2D6;
     --yellow: #FFCC00;
-    --dark-grey: #3C3C3B;
+    /* --dark-grey: #3C3C3B; */
     --white: #FFFFFF;
-    --light-grey: #F5F7F7;
+    /* --light-grey: #F5F7F7; */
     --correct: #4CAF50;
     --incorrect: #F44336;
+
+    /* Cambios de imagen */
+    /* Rojo: */
+    --red: #D7263D;
+    /* Gris oscuro: */
+    --dark-grey: #0E0E12;
+    /* Gris claro: */
+    --light-grey: #707070;
+    /* Blanco: */
+    /* FFFFFF */
 }

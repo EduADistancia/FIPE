@@ -100,6 +100,7 @@ export class GroupTableComponent {
   }
 
   private addCheck(correct: boolean): string {
-    return correct ? '✔️' : '❌';
+    // return correct ? '✔️' : '❌';
+    return correct ? '✅' : '❌';
   }
 }
