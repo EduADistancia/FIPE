@@ -45,7 +45,9 @@
     padding: 18px;
     border-radius: 8px;
     margin-bottom: 25px;
-    border-left: 3px solid var(--light-blue);
+    /* border-left: 3px solid var(--light-blue); */
+    border: 1px solid var(--light-grey);
+    border-left: 3px solid var(--light-grey);
 }
 
 .situation strong {
