@@ -5,7 +5,7 @@ export const ACTIVITIES: Activities = {
     {
       "idAccess": "m1_final",
       "type": "cases",
-      "monocase": false,
+      "monocase": true,
       "header": {
         "title": {
           "courseTitle": "Formación Integral para el Emprendedorismo",
@@ -14,246 +14,287 @@ export const ACTIVITIES: Activities = {
         },
         "instructions": {
           "instructionText": [
-            "Esta evaluación integra los contenidos trabajados en el primer encuentro del curso. Leé atentamente cada caso y seleccioná la opción que consideres más adecuada en función de lo aprendido.",
-            "El objetivo es evaluar tu capacidad de análisis, razonamiento y toma de decisiones en contextos reales de emprendimiento."
+            "Esta evaluación integra los contenidos trabajados en la jornada \"Habilidades Clave para Emprender\".",
+            "Leé atentamente cada situación y seleccioná la opción que consideres más adecuada según los conceptos vistos en la clase.",
+            "El objetivo es evaluar tu capacidad de análisis, reflexión y aplicación práctica de herramientas vinculadas al autoconocimiento, las habilidades blandas, la adaptabilidad y la gestión del tiempo."
           ]
         }
       },
       "passingScore": 7,
       "cases": [
         {
-          "caseTitle": "Autoconocimiento y FODA Personal",
-          "situation": "María tiene un emprendimiento de pastelería artesanal. Trabaja sola desde su casa. Sus clientes destacan la calidad de sus productos, pero suele aceptar más pedidos de los que puede cumplir, termina agotada y muchas veces entrega fuera de horario. En su barrio abrieron dos nuevos locales que venden productos similares a menor precio.",
-          "score": 3,
+          "caseTitle": "CASO INTEGRADOR ÚNICO",
+          "situation": "Mariano tiene 38 años y hace seis meses comenzó un emprendimiento de estampado y diseño de remeras personalizadas desde su casa. Trabaja muchas horas por día porque además tiene otro empleo de media jornada.\nAunque logra vender algunos productos por redes sociales y recomendaciones, siente que constantemente está apagando incendios y que nunca termina de organizarse.\nActualmente:\n\t● Responde mensajes de clientes a cualquier hora del día.\n\t● Acepta todos los pedidos aunque algunos no le resulten convenientes.\n\t● Suele postergar tareas administrativas porque “no le gustan”.\n\t● Se frustra rápidamente cuando surgen cambios o problemas con proveedores.\n\t● Tiene buenas ideas creativas, pero le cuesta priorizar tareas.\n\t● Nunca realizó un análisis personal sobre sus fortalezas y debilidades como emprendedor.\nMariano quiere profesionalizar su emprendimiento, reducir el estrés y mejorar su organización para poder crecer de manera más sostenible.",
+          "score": 10,
           "questions": [
             {
-              "question": "¿Cuál corresponde a una debilidad dentro del FODA personal de María?",
+              "title": "BLOQUE 1 - Habilidades blandas y autoconocimiento",
+              "question": "¿Cuál de las siguientes situaciones refleja principalmente una dificultad vinculada a la gestión del tiempo?",
               "options": [
                 {
-                  "answer": "Apertura de nuevos locales en el barrio",
+                  "answer": "Tener creatividad para diseñar productos",
                   "isCorrect": false,
                   "justification": ""
                 },
                 {
-                  "answer": "Buena valoración de los clientes sobre la calidad",
+                  "answer": "Ofrecer productos personalizados",
                   "isCorrect": false,
                   "justification": ""
                 },
                 {
-                  "answer": "Dificultad para poner límites a la cantidad de pedidos",
+                  "answer": "Responder mensajes a cualquier hora y no priorizar tareas",
                   "isCorrect": true,
-                  "justification": "Las debilidades en un FODA personal son aspectos internos que se pueden mejorar, como la gestión personal."
+                  "justification": "La gestión del tiempo implica organizar tareas, establecer prioridades y administrar horarios de trabajo. La falta de límites y organización afecta directamente la productividad y el bienestar."
                 },
                 {
-                  "answer": "Baja de precios del mercado por la competencia",
+                  "answer": "Trabajar desde su casa",
                   "isCorrect": false,
                   "justification": ""
                 }
               ]
             },
             {
-              "question": "¿Cuál sería la mejor decisión inicial para transformar el autoconocimiento en acción?",
+              "question": "¿Cuál de las siguientes habilidades blandas necesita fortalecer Mariano para enfrentar mejor los cambios y problemas con proveedores?",
               "options": [
                 {
-                  "answer": "Bajar precios para competir con los nuevos locales",
+                  "answer": "Memoria",
                   "isCorrect": false,
                   "justification": ""
                 },
                 {
-                  "answer": "Ampliar la variedad de productos ofrecidos",
+                  "answer": "Velocidad de producción",
                   "isCorrect": false,
                   "justification": ""
                 },
                 {
-                  "answer": "Definir un límite diario de pedidos aceptables",
+                  "answer": "Adaptabilidad",
                   "isCorrect": true,
-                  "justification": "Transformar el diagnóstico en acción concreta es clave para el autoconocimiento aplicado."
+                  "justification": "La adaptabilidad permite ajustarse a nuevas situaciones, resolver problemas y responder mejor frente a cambios e imprevistos del contexto emprendedor."
                 },
                 {
-                  "answer": "Dejar de aceptar pedidos temporalmente",
+                  "answer": "Manejo técnico de impresión",
                   "isCorrect": false,
                   "justification": ""
                 }
               ]
-            }
+            },
+            {
+              "question": "¿Qué herramienta trabajada en el módulo ayudaría a Mariano a identificar fortalezas, debilidades, oportunidades y amenazas?",
+              "options": [
+                {
+                  "answer": "Canvas",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Técnica de Pomodoro",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "FODA personal",
+                  "isCorrect": true,
+                  "justification": "El FODA personal permite analizar factores internos y externos que impactan en el desarrollo personal y emprendedor."
+                },
+                {
+                  "answer": "Organigrama",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "¿Cuál de las siguientes opciones representa una fortaleza dentro de un FODA personal?",
+              "options": [
+                {
+                  "answer": "Inflación y aumento de costos",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Mucha competencia en redes sociales",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Buena creatividad para diseñar productos",
+                  "isCorrect": true,
+                  "justification": "Las fortalezas son aspectos internos positivos que ayudan al emprendimiento, como capacidades, conocimientos o habilidades personales."
+                },
+                {
+                  "answer": "Cambios en tendencias del mercado",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "¿Por qué las habilidades blandas son importantes para emprender?",
+              "options": [
+                {
+                  "answer": "Porque reemplazan totalmente los conocimientos técnicos",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Porque solo sirven para grandes empresas",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Porque ayudan a relacionarse, organizarse y adaptarse mejor",
+                  "isCorrect": true,
+                  "justification": "Las habilidades blandas facilitan la comunicación, la toma de decisiones, la organización y la adaptación frente a contextos cambiantes."
+                },
+                {
+                  "answer": "Porque permiten evitar todos los problemas del negocio",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "title": "BLOQUE 2 - Adaptabilidad y gestión del tiempo",
+              "question": "¿Qué situación representa un \"ladrón de tiempo\" frecuente?",
+              "options": [
+                {
+                  "answer": "Planificar tareas semanalmente",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Delegar tareas específicas",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Revisar constantemente redes sociales mientras se trabaja",
+                  "isCorrect": true,
+                  "justification": "Las interrupciones constantes y el uso excesivo de redes sociales dificultan la concentración y reducen la productividad."
+                },
+                {
+                  "answer": "Organizar horarios de trabajo",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "¿Cuál sería una acción concreta para mejorar la organización diaria de Mariano?",
+              "options": [
+                {
+                  "answer": "Trabajar sin horarios definidos",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Aceptar todos los pedidos sin analizar tiempos",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Definir prioridades y horarios específicos de trabajo",
+                  "isCorrect": true,
+                  "justification": "Definir horarios y prioridades permite organizar mejor las tareas y evitar el agotamiento."
+                },
+                {
+                  "answer": "Responder mensajes durante toda la madrugada",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "¿Qué significa \"resistencia al cambio\"?",
+              "options": [
+                {
+                  "answer": "Adaptarse rápidamente a nuevas situaciones",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Buscar soluciones creativas frente a problemas",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Mantener hábitos conocidos por miedo o inseguridad",
+                  "isCorrect": true,
+                  "justification": "La resistencia al cambio aparece cuando las personas se aferran a formas conocidas de actuar por temor a la incertidumbre."
+                },
+                {
+                  "answer": "Cambiar permanentemente de emprendimiento",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "Si Mariano detecta que pierde mucho tiempo respondiendo mensajes, ¿qué herramienta podría ayudarlo?",
+              "options": [
+                {
+                  "answer": "Definir horarios específicos para responder consultas",
+                  "isCorrect": true,
+                  "justification": "Organizar momentos específicos para responder mensajes mejora la concentración y el orden de trabajo."
+                },
+                {
+                  "answer": "Trabajar más horas sin descanso",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Aceptar todos los pedidos posibles",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Eliminar completamente las redes sociales",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
+            {
+              "question": "¿Por qué el autoconocimiento es importante para emprender?",
+              "options": [
+                {
+                  "answer": "Porque evita completamente los errores",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Porque permite reconocer fortalezas, límites y necesidades de mejora",
+                  "isCorrect": true,
+                  "justification": "El autoconocimiento ayuda a tomar mejores decisiones, organizar recursos personales y desarrollar habilidades necesarias para crecer."
+                },
+                {
+                  "answer": "Porque reemplaza la planificación del negocio",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+                {
+                  "answer": "Porque garantiza el éxito económico inmediato",
+                  "isCorrect": false,
+                  "justification": ""
+                },
+              ]
+            },
           ]
         },
-        {
-          "caseTitle": "Adaptabilidad y Resistencia al Cambio",
-          "situation": "Lucas vende indumentaria a través de redes sociales. Durante meses utilizó una plataforma de pagos digital que le resultaba cómoda. Recientemente la empresa modificó sus condiciones y aumentó las comisiones, reduciendo su margen de ganancia. Aun así, continúa utilizándola \"porque ya la conoce\".",
-          "score": 4,
-          "questions": [
-            {
-              "question": "La actitud de Lucas refleja principalmente:",
-              "options": [
-                {
-                  "answer": "Falta de habilidades técnicas para cambiar",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Resistencia al cambio por comodidad",
-                  "isCorrect": true,
-                  "justification": "Continuar con una herramienta que reduce ganancias solo por familiaridad es una conducta típica de resistencia al cambio."
-                },
-                {
-                  "answer": "Ausencia de oportunidades externas",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Falta de clientes para justificar el cambio",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            },
-            {
-              "question": "¿Qué acción demuestra mayor adaptabilidad?",
-              "options": [
-                {
-                  "answer": "Continuar sin cambios hasta que la situación sea crítica",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Aumentar precios sin analizar otras alternativas",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Probar medios de pago alternativos y comparar comisiones",
-                  "isCorrect": true,
-                  "justification": "La adaptabilidad implica evaluar activamente alternativas ante cambios en el entorno."
-                },
-                {
-                  "answer": "Dejar de vender hasta encontrar una solución perfecta",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            },
-            {
-              "question": "¿Qué oportunidad podría surgir de esta situación?",
-              "options": [
-                {
-                  "answer": "Pérdida de clientes por aumento de precios",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Reducción de ventas por la complicación en los pagos",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Optimizar costos y diversificar métodos de cobro",
-                  "isCorrect": true,
-                  "justification": "Las crisis pueden convertirse en oportunidades para optimizar procesos y diversificar."
-                },
-                {
-                  "answer": "Dependencia de una sola herramienta de pago",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "caseTitle": "Gestión del Tiempo y Toma de Decisiones",
-          "situation": "Ana combina su emprendimiento con otro trabajo. Dedica \"lo que queda del día\" a su negocio, responde mensajes de forma constante, no planifica tareas y termina la jornada con cansancio sin haber avanzado en lo importante.",
-          "score": 3,
-          "questions": [
-            {
-              "question": "¿Cuál es el principal ladrón de tiempo identificado en la situación de Ana?",
-              "options": [
-                {
-                  "answer": "Falta de clientes que justifiquen la organización",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Multitarea constante y ausencia de planificación",
-                  "isCorrect": true,
-                  "justification": "La multitarea sin planificación es uno de los principales \"ladrones de tiempo\" identificados."
-                },
-                {
-                  "answer": "Exceso de herramientas digitales para gestionar",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Falta de motivación para el emprendimiento",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            },
-            {
-              "question": "¿Cuál sería la mejor acción inicial para mejorar su gestión del tiempo?",
-              "options": [
-                {
-                  "answer": "Trabajar más horas para compensar la falta de organización",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Responder mensajes al instante para no acumular tareas",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Definir un bloque fijo de tiempo sin interrupciones para tareas importantes",
-                  "isCorrect": true,
-                  "justification": "La gestión consciente del tiempo implica bloques específicos para tareas prioritarias."
-                },
-                {
-                  "answer": "Delegar todas las tareas del emprendimiento",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            },
-            {
-              "question": "¿Qué beneficio concreto podría obtener Ana con esta decisión?",
-              "options": [
-                {
-                  "answer": "Más tareas pendientes por falta de atención constante",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Menor control sobre todas las actividades del negocio",
-                  "isCorrect": false,
-                  "justification": ""
-                },
-                {
-                  "answer": "Mayor foco en tareas importantes y menor estrés",
-                  "isCorrect": true,
-                  "justification": "La organización del tiempo mejora el foco, el avance en tareas importantes y reduce el estrés."
-                },
-                {
-                  "answer": "Eliminar la necesidad de organizarse en el futuro",
-                  "isCorrect": false,
-                  "justification": ""
-                }
-              ]
-            }
-          ]
-        }
       ],
       feedback: {
         resultOk: [
-          "¡Felicitaciones! Has demostrado comprensión de los conceptos clave del módulo."
+          "¡Felicitaciones!",
+          "En esta jornada trabajaste herramientas fundamentales para fortalecer tu rol emprendedor, desarrollando habilidades vinculadas al autoconocimiento, la adaptabilidad y la organización del tiempo.",
+          "Comprender cómo gestionás tus tareas, emociones y decisiones es clave para construir un emprendimiento más sostenible y saludable en el tiempo.",
+          "Todo lo trabajado en este módulo será una base importante para las próximas jornadas, donde comenzarás a profundizar en planificación, costos, clientes y estrategias para hacer crecer tu proyecto.",
         ],
         resultNotOk: [
-          "Te recomendamos:",
-          "● Repasar los contenidos del módulo\n● Analizar las respuestas correctas y sus justificaciones\n● Volver a intentarlo cuando te sientas preparado/a"
+          "En esta jornada comenzaste a trabajar habilidades fundamentales para el desarrollo emprendedor. Si bien todavía no alcanzaste el puntaje necesario, este proceso también forma parte del aprendizaje.",
+          "Te sugerimos revisar especialmente los siguientes contenidos:",
+          "\t● Habilidades blandas y su importancia\n\t● FODA personal\n\t● Adaptabilidad y resistencia al cambio\n\t● Gestión del tiempo y ladrones de tiempo",
+          "Reforzar estos conceptos te va a ayudar a organizar mejor tu emprendimiento y tomar decisiones más claras y sostenibles en el tiempo.",
         ]
-      },
-      badget: {
-        text: "Insignia Digital - Habilidades Clave para Emprender"
       }
     },
     {
